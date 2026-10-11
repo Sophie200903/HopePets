@@ -4,11 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio | HopePets</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body data-theme="light">
     <!-- ENCABEZADO (Nombre del aprendiz, programa y menú de navegación) -->
     <header class="header-plataforma">
+        <div class="barra-superior">
+            <button id="btnTema" class="btn-tema" type="button" title="Cambiar tema claro/oscuro">🌙 Modo Oscuro</button>
+        </div>
         <div class="header-content">
             <img src="img/logo-hopepets.png" alt="Logotipo HopePets" class="logo-plataforma">
             <div class="header-text">
@@ -21,28 +27,46 @@
             <a href="habilidades.html">Habilidades</a>
             <a href="proyecto.html">Proyecto</a>
             <a href="contacto.html">Contacto</a>
-            <button id="btnTema" class="btn-tema" type="button" title="Cambiar tema claro/oscuro">🌙 Modo Oscuro</button>
         </nav>
     </header>
 
     <main class="main-container">
 
         <!-- SECCIÓN DE PRESENTACIÓN (Fotografía, descripción, intereses tecnológicos) -->
-        <section id="inicio" class="card-seccion">
+        <section id="inicio" class="card-seccion hero">
             <h2>Perfil del Aprendiz</h2>
             <div class="presentacion-grid">
                 <div class="avatar-container">
                     <img src="img/mi-foto.png" alt="Fotografía de Sofía" class="foto-perfil">
                 </div>
                 <div class="info-container">
-                    <h3 id="tituloPrincipal">Hola, soy Sofía</h3>
+                    <h3 id="tituloPrincipal">Hola, soy Sofia</h3>
+                    <p class="rol-linea"><span id="rolAnimado">programadora en formación</span></p>
                     <span class="badge-sena">Aprendiz SENA - ADSO</span>
                     <p>
-                        Estudiante apasionada por el desarrollo de software, la creación de soluciones digitales con impacto social
-                        y la arquitectura de bases de datos. Me motiva transformar ideas en plataformas funcionales y accesibles.
+                        Soy aprendiz del SENA en Análisis y Desarrollo de Software, y lo que más me emociona es
+                        convertir una idea en algo que otras personas puedan usar. Me interesan la programación y las
+                        soluciones digitales interactivas, esas que cobran vida cuando alguien las prueba.
+                    </p>
+                    <p>
+                        Soy creativa, curiosa y siempre quiero aprender algo nuevo. Los animales son mi mayor fuente de
+                        inspiración: creo que la tecnología también puede darles visibilidad y mejorar su calidad de vida,
+                        y de esa idea nació HopePets.
+                    </p>
+                    <p>
+                        Mi meta es seguir creciendo como programadora, aprender de cada proyecto y construir soluciones
+                        que se disfruten y que, como HopePets, ayuden a las mascotas que más lo necesitan.
                     </p>
                     <div class="intereses-tec">
-                        <strong>Intereses tecnológicos:</strong> Desarrollo web frontend, modelado de sistemas (UML), bases de datos SQL/MySQL, Python y Java.
+                        <strong>Intereses tecnológicos:</strong>
+                        <ul class="chips">
+                            <li>🌐 Desarrollo web frontend</li>
+                            <li>📐 Modelado UML</li>
+                            <li>🗄️ SQL / MySQL</li>
+                            <li>🐍 Python</li>
+                            <li>☕ Java</li>
+                            <li>🐾 Tecnología para el bienestar animal</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -56,7 +80,7 @@
             </p>
             <a href="proyecto.html" class="btn-verde">Conocer el proyecto</a>
             <p class="nota-enlace">
-                Mi formación: <a href="https://www.sena.edu.co" target="_blank" rel="noopener noreferrer">Sitio oficial del SENA ↗</a>
+                ¿Quieres conocer más sobre el SENA? ingresa  al: <a href="https://www.sena.edu.co" target="_blank" rel="noopener noreferrer">Sitio oficial del SENA ↗</a>
             </p>
         </section>
     </main>
@@ -64,6 +88,10 @@
     <footer>
         <p>© 2026 - HopePets | Desarrollado por Sofía (SENA ADSO)</p>
     </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
 
     <script src="js/script.js"></script>
 </body>
