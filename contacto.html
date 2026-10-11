@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | HopePets</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body data-theme="light">
+    <!-- ENCABEZADO (Nombre del aprendiz, programa y menú de navegación) -->
+    <header class="header-plataforma">
+        <div class="header-content">
+            <img src="img/logo-hopepets.png" alt="Logotipo HopePets" class="logo-plataforma">
+            <div class="header-text">
+                <h1>HopePets</h1>
+                <p class="sena-tag">Sofía | ADSO - SENA</p>
+            </div>
+        </div>
+        <nav aria-label="Menú principal">
+            <a href="index.html">Inicio</a>
+            <a href="habilidades.html">Habilidades</a>
+            <a href="proyecto.html">Proyecto</a>
+            <a href="contacto.html" aria-current="page">Contacto</a>
+            <button id="btnTema" class="btn-tema" type="button" title="Cambiar tema claro/oscuro">🌙 Modo Oscuro</button>
+        </nav>
+    </header>
+
+    <main class="main-container">
+
+        <!-- SECCIÓN DE CONTACTO (Nombre, correo, mensaje y botón enviar) -->
+        <section id="contacto" class="card-seccion">
+            <h2>Formulario de Contacto</h2>
+            <p class="subtitulo-seccion">¿Tienes dudas o quieres sumarte como voluntario? Envíanos un mensaje.</p>
+
+            <form id="formContacto" class="formulario-estilizado" novalidate>
+                <div class="grupo-input">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" autocomplete="name" required>
+                </div>
+
+                <div class="grupo-input">
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com" autocomplete="email" required>
+                </div>
+
+                <div class="grupo-input">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn-verde btn-enviar">Enviar Mensaje</button>
+                <p id="errorMensaje" class="texto-error" role="alert" hidden></p>
+                <p id="exitoMensaje" class="texto-exito" role="status" hidden></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 - HopePets | Desarrollado por Sofía (SENA ADSO)</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

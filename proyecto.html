@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto | HopePets</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body data-theme="light">
+    <!-- ENCABEZADO (Nombre del aprendiz, programa y menú de navegación) -->
+    <header class="header-plataforma">
+        <div class="header-content">
+            <img src="img/logo-hopepets.png" alt="Logotipo HopePets" class="logo-plataforma">
+            <div class="header-text">
+                <h1>HopePets</h1>
+                <p class="sena-tag">Sofía | ADSO - SENA</p>
+            </div>
+        </div>
+        <nav aria-label="Menú principal">
+            <a href="index.html">Inicio</a>
+            <a href="habilidades.html">Habilidades</a>
+            <a href="proyecto.html" aria-current="page">Proyecto</a>
+            <a href="contacto.html">Contacto</a>
+            <button id="btnTema" class="btn-tema" type="button" title="Cambiar tema claro/oscuro">🌙 Modo Oscuro</button>
+        </nav>
+    </header>
+
+    <main class="main-container">
+
+        <!-- SECCIÓN DEL PROYECTO PERSONAL -->
+        <section id="mision-plataforma" class="card-seccion">
+            <h2>Acerca de HopePets</h2>
+            <p class="subtitulo-seccion">
+                <strong>HopePets</strong> es una plataforma web social enfocada en visibilizar y conectar casos de mascotas
+                que presentan condiciones de discapacidad o movilidad reducida, ofreciendo evidencias médicas claras y un canal directo de ayuda.
+            </p>
+
+            <h3 class="subtitulo-lista">¿Cómo funciona?</h3>
+            <!-- LISTA ORDENADA -->
+            <ol class="lista-pasos">
+                <li>Una familia, rescatista u hogar de paso registra el caso de la mascota.</li>
+                <li>Adjunta las evidencias médicas que respaldan la condición.</li>
+                <li>El equipo de HopePets revisa la información y marca el caso como <strong>Verificado</strong>.</li>
+                <li>El caso se publica en la plataforma con su necesidad específica.</li>
+                <li>Las personas pueden apoyar el caso y seguir su avance.</li>
+            </ol>
+        </section>
+
+        <section id="proyectos" class="card-seccion">
+            <h2>Casos y Proyectos Activos</h2>
+            <p class="subtitulo-seccion">Conoce los proyectos de apoyo que gestiona la plataforma.</p>
+
+            <div class="grid-tarjetas">
+                <article class="tarjeta-mascota">
+                    <img src="img/mascota1.jpg" alt="Luna, perrita con movilidad reducida">
+                    <div class="contenido-tarjeta">
+                        <span class="badge-medico">Verificado</span>
+                        <h3>Caso 1: Luna (Movilidad Reducida)</h3>
+                        <p>Plataforma de gestión y fondeo para mantenimiento de carrito ortopédico y terapias de rehabilitación.</p>
+                        <button type="button" class="btn-verde btn-apoyar" data-caso="Luna">Apoyar Caso</button>
+                    </div>
+                </article>
+
+                <article class="tarjeta-mascota">
+                    <img src="img/mascota2.jpg" alt="Max, perro con discapacidad visual">
+                    <div class="contenido-tarjeta">
+                        <span class="badge-medico">Verificado</span>
+                        <h3>Caso 2: Max (Cuidados Especiales)</h3>
+                        <p>Red de apoyo y seguimiento médico para mascotas con discapacidad visual en hogares de paso.</p>
+                        <button type="button" class="btn-verde btn-apoyar" data-caso="Max">Apoyar Caso</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="card-seccion">
+            <h2>Resumen de casos</h2>
+            <!-- TABLA -->
+            <div class="tabla-contenedor">
+                <table class="tabla-casos">
+                    <caption>Casos activos en HopePets</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Caso</th>
+                            <th scope="col">Mascota</th>
+                            <th scope="col">Condición</th>
+                            <th scope="col">Necesidad principal</th>
+                            <th scope="col">Estado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Luna</td>
+                            <td>Movilidad reducida</td>
+                            <td>Carrito ortopédico y terapias</td>
+                            <td>Verificado</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Max</td>
+                            <td>Discapacidad visual</td>
+                            <td>Seguimiento médico y hogar de paso</td>
+                            <td>Verificado</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="card-seccion">
+            <h2>Conoce HopePets en video</h2>
+            <p class="subtitulo-seccion">Una breve presentación de la idea y de los casos que busca apoyar.</p>
+            <!-- VIDEO -->
+            <video class="video-proyecto" controls preload="metadata" poster="img/mascota1.jpg">
+                <source src="video/presentacion-hopepets.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de video.
+            </video>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 - HopePets | Desarrollado por Sofía (SENA ADSO)</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
