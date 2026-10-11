@@ -4,11 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto | HopePets</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body data-theme="light">
     <!-- ENCABEZADO (Nombre del aprendiz, programa y menú de navegación) -->
     <header class="header-plataforma">
+        <div class="barra-superior">
+            <button id="btnTema" class="btn-tema" type="button" title="Cambiar tema claro/oscuro">🌙 Modo Oscuro</button>
+        </div>
         <div class="header-content">
             <img src="img/logo-hopepets.png" alt="Logotipo HopePets" class="logo-plataforma">
             <div class="header-text">
@@ -21,7 +27,6 @@
             <a href="habilidades.html">Habilidades</a>
             <a href="proyecto.html">Proyecto</a>
             <a href="contacto.html" aria-current="page">Contacto</a>
-            <button id="btnTema" class="btn-tema" type="button" title="Cambiar tema claro/oscuro">🌙 Modo Oscuro</button>
         </nav>
     </header>
 
@@ -45,7 +50,8 @@
 
                 <div class="grupo-input">
                     <label for="mensaje">Mensaje:</label>
-                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                    <textarea id="mensaje" name="mensaje" rows="4" maxlength="300" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                    <span id="contadorMensaje" class="contador">0 / 300</span>
                 </div>
 
                 <button type="submit" class="btn-verde btn-enviar">Enviar Mensaje</button>
